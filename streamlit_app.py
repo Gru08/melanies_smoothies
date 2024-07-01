@@ -26,6 +26,7 @@ ingredients_list = st.multiselect(
     , my_dataframe
     , max_selections=5
 )
+import requests
 
 if ingredients_list:
     ingredients_string = ''
@@ -49,6 +50,5 @@ if ingredients_list:
 	
     st.success('Your Smoothie is ordered!', icon="✅")
 
-import requests
 
     
